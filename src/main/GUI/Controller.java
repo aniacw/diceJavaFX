@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import main.ProgrammableDice.*;
 import main.ProgrammableDice.Dice.Dice;
 import main.ProgrammableDice.exception.ProgramInitializationException;
@@ -47,9 +48,10 @@ public class Controller {
 
     public void onButtonAddClicked(ActionEvent actionEvent) {
         try {
-            dice.addProgram(
-                    programFactory.createProgram(
-                            comboBoxPrograms.getValue(), comboBoxTriggers.getValue()));
+            Program p = programFactory.createProgram(
+                    comboBoxPrograms.getValue(), comboBoxTriggers.getValue());
+            dice.addProgram(p);
+            programList.getItems().add(p);
         } catch (ProgramInitializationException e) {
             labelInfo.setText(e.getMessage());
         }
@@ -58,4 +60,7 @@ public class Controller {
     public void onButtonRollClicked(ActionEvent actionEvent) {
         labelRollResult.setText(Integer.toString(dice.roll()));
     }
+
+    @FXML
+    private ListView <Program> programList;
 }

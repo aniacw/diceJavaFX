@@ -25,4 +25,12 @@ public class RepeatLastNumber extends Program {
         ++counter;
         return dice.getHistory().last();
     }
+
+    @Override
+    public String toString() {
+        return "RepeatLastNumber{" +
+                "repetitions=" + repetitions +
+                "trigger=" + trigger+
+                '}';
+    }
 }

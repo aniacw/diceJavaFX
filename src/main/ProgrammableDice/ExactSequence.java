@@ -34,4 +34,12 @@ public class ExactSequence extends Program {
     public int generateNumber() {
         return iterator.next();
     }
+
+    @Override
+    public String toString() {
+        return "ExactSequence{" +
+                "sequence=" + sequence +
+                "trigger=" + trigger+
+                '}';
+    }
 }

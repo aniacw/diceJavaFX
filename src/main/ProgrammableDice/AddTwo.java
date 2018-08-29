@@ -4,6 +4,7 @@ public class AddTwo extends Program {
     private int repetitions;
     private int counter = 0;
 
+
     public AddTwo(Trigger trigger,  int repetitions) {
         super(trigger);
         this.repetitions = repetitions;
@@ -25,5 +26,13 @@ public class AddTwo extends Program {
         int n = dice.getHistory().last();
         n = (n + 2) % 6;
         return n;
+    }
+
+    @Override
+    public String toString() {
+        return "AddTwo{" +
+                "repetitions=" + repetitions +
+                "trigger=" + trigger+
+                '}';
     }
 }

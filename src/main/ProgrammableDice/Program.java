@@ -2,7 +2,7 @@ package main.ProgrammableDice;
 import main.ProgrammableDice.Dice.Dice;
 
 public abstract class Program {
-    private Trigger trigger;
+    protected Trigger trigger;
     protected Dice dice;
 
     protected Program(Trigger trigger) {
@@ -19,5 +19,12 @@ public abstract class Program {
 
     public Trigger getTrigger() {
         return trigger;
+    }
+
+    @Override
+    public String toString() {
+        return "Program{" +
+                "trigger=" + trigger +
+                '}';
     }
 }

@@ -6,18 +6,36 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SequenceTrigger implements Trigger {
+
+
     private List<Integer> sequence;
+
 
     public SequenceTrigger(List<Integer> sequence) {
         this.sequence = sequence;
     }
 
-    public SequenceTrigger(Integer... sequence){
+    public SequenceTrigger(Integer... sequence) {
         this.sequence = Arrays.asList(sequence);
     }
 
     @Override
     public boolean isTriggered(History history) {
         return history.last(sequence.size()).equals(sequence);
+    }
+
+    @Override
+    public void initialize(String input) throws ParseException {
+
+        int n;
+        String[] tokens;
+        tokens = input.split("[,; ]+");
+        try {
+            for (String s : tokens) {
+                n = Integer.parseInt(s);
+            }
+        } catch (NumberFormatException e){
+            throw new ParseException("", e);
+        }
     }
 }

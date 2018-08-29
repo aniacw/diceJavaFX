@@ -62,6 +62,12 @@ public class StringTrigger implements Trigger {
         return h == recent.size() && s == sequence.length();
     }
 
+    @Override
+    public String toString() {
+        return "StringTrigger{" +
+                "sequence='" + sequence + '\'' +
+                '}';
+    }
 }
 
 

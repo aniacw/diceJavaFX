@@ -21,4 +21,13 @@ public class RandomNumber extends Program {
     public int generateNumber() {
         return random.nextInt(bound) + 1;
     }
+
+    @Override
+    public String toString() {
+        return "RandomNumber{" +
+                "random=" + random +
+                ", bound=" + bound +
+                "trigger=" + trigger+
+                '}';
+    }
 }
