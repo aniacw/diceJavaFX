@@ -4,16 +4,28 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane prefHeight="300.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.GUI.Controller">
+<Pane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.GUI.Controller">
    <children>
-      <Button fx:id="buttonAdd" layoutX="22.0" layoutY="103.0" mnemonicParsing="false" onAction="#onButtonAddClicked" text="Add" />
-      <ComboBox fx:id="comboBoxPrograms" layoutX="240.0" layoutY="103.0" prefWidth="150.0" />
-      <ComboBox fx:id="comboBoxTriggers" layoutX="77.0" layoutY="103.0" prefWidth="150.0" />
-      <Label fx:id="labelRollResult" layoutX="172.0" layoutY="150.0" prefHeight="19.0" prefWidth="70.0" style="-fx-border-color: green;" />
+      <Button fx:id="buttonAdd" layoutX="22.0" layoutY="104.0" mnemonicParsing="false" onAction="#onButtonAddClicked" text="Add">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ComboBox fx:id="comboBoxPrograms" layoutX="251.0" layoutY="110.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxTriggers" layoutX="95.0" layoutY="110.0" prefWidth="150.0" />
+      <Label fx:id="labelRollResult" layoutX="135.0" layoutY="160.0" prefHeight="19.0" prefWidth="70.0" style="-fx-border-color: green;" />
       <Label fx:id="labelInfo" layoutX="14.0" layoutY="269.0" prefHeight="17.0" prefWidth="377.0" />
-      <Button fx:id="buttonRoll" layoutX="15.0" layoutY="138.0" mnemonicParsing="false" onAction="#onButtonRollClicked" text="Roll" />
-      <ListView fx:id="programList" layoutX="404.0" layoutY="38.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="buttonRoll" layoutX="23.0" layoutY="150.0" mnemonicParsing="false" onAction="#onButtonRollClicked" text="Roll">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ListView fx:id="programList" layoutX="422.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="input" layoutX="251.0" layoutY="66.0" />
+      <ListView layoutX="673.0" layoutY="72.0" prefHeight="300.0" prefWidth="44.0" />
+      <Label fx:id="labelHistory" layoutX="676.0" layoutY="33.0" text="History" />
+      <Label  fx:id="labelSelectedProgram" layoutX="475.0" layoutY="33.0" text="Selected Program" />
    </children>
 </Pane>

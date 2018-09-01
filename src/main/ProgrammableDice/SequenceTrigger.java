@@ -7,9 +7,7 @@ import java.util.List;
 
 public class SequenceTrigger implements Trigger {
 
-
     private List<Integer> sequence;
-
 
     public SequenceTrigger(List<Integer> sequence) {
         this.sequence = sequence;
@@ -33,8 +31,9 @@ public class SequenceTrigger implements Trigger {
         try {
             for (String s : tokens) {
                 n = Integer.parseInt(s);
+                sequence.add(n);
             }
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             throw new ParseException("", e);
         }
     }

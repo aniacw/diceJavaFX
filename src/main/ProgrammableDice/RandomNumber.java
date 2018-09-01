@@ -27,7 +27,7 @@ public class RandomNumber extends Program {
         return "RandomNumber{" +
                 "random=" + random +
                 ", bound=" + bound +
-                "trigger=" + trigger+
+                "trigger=" + trigger +
                 '}';
     }
 }

@@ -10,6 +10,8 @@ import main.ProgrammableDice.*;
 import main.ProgrammableDice.Dice.Dice;
 import main.ProgrammableDice.exception.ProgramInitializationException;
 
+import java.util.Arrays;
+
 public class Controller {
     private Dice dice;
     private ProgramFactory programFactory;
@@ -32,13 +34,22 @@ public class Controller {
     @FXML
     private Label labelRollResult;
 
-    public Controller(){
+    @FXML
+    private Label labelHistory;
+
+    @FXML
+    private Label labelSelectedProgram;
+
+    @FXML
+    private ListView history;
+
+    public Controller() {
         dice = new Dice();
         programFactory = new ProgramFactory();
     }
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         for (String programName : programFactory.getAvailableProgramNames())
             comboBoxPrograms.getItems().addAll(programName);
 
@@ -59,8 +70,9 @@ public class Controller {
 
     public void onButtonRollClicked(ActionEvent actionEvent) {
         labelRollResult.setText(Integer.toString(dice.roll()));
+        history.getItems().addAll(dice.getHistory());
     }
 
     @FXML
-    private ListView <Program> programList;
+    private ListView<Program> programList;
 }

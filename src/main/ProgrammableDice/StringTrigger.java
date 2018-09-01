@@ -5,6 +5,12 @@ import main.ProgrammableDice.Dice.History;
 import java.util.List;
 
 public class StringTrigger implements Trigger {
+
+    @Override
+    public void initialize(String input) throws ParseException {
+
+    }
+
     private String sequence;
 
     public StringTrigger(String sequence) {

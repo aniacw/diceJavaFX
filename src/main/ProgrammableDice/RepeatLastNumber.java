@@ -30,7 +30,7 @@ public class RepeatLastNumber extends Program {
     public String toString() {
         return "RepeatLastNumber{" +
                 "repetitions=" + repetitions +
-                "trigger=" + trigger+
+                "trigger=" + trigger +
                 '}';
     }
 }

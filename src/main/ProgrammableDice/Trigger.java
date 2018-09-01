@@ -3,6 +3,7 @@ package main.ProgrammableDice;
 import main.ProgrammableDice.Dice.History;
 
 public interface Trigger {
+
     class ParseException extends Exception {
         public ParseException() {
         }

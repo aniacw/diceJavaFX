@@ -39,7 +39,7 @@ public class ExactSequence extends Program {
     public String toString() {
         return "ExactSequence{" +
                 "sequence=" + sequence +
-                "trigger=" + trigger+
+                "trigger=" + trigger +
                 '}';
     }
 }

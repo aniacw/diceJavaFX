@@ -27,4 +27,15 @@ public class History {
     public void clear() {
         history.clear();
     }
+
+    public List<Integer> getHistory() {
+        return history;
+    }
+
+    @Override
+    public String toString() {
+        return "History{" +
+                "history=" + history +
+                '}';
+    }
 }

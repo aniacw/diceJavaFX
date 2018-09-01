@@ -7,10 +7,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dice {
+
     private static final Program defaultProgram = new RandomNumber(new Trigger() {
         @Override
         public boolean isTriggered(History history) {
             return true;
+        }
+
+        @Override
+        public void initialize(String input) throws ParseException {
+
         }
     }, 6);
 
