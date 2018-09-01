@@ -6,11 +6,6 @@ import java.util.List;
 
 public class StringTrigger implements Trigger {
 
-    @Override
-    public void initialize(String input) throws ParseException {
-
-    }
-
     private String sequence;
 
     public StringTrigger(String sequence) {
@@ -69,11 +64,26 @@ public class StringTrigger implements Trigger {
     }
 
     @Override
+    public void initialize(String input) throws ParseException {
+        sequence = "";
+        String[] tokens;
+        tokens = input.split("[,; ]+");
+        try {
+            for (String s : tokens)
+                sequence = sequence.concat(s);
+        } catch (NumberFormatException e) {
+            throw new ParseException("", e);
+        }
+    }
+
+    @Override
     public String toString() {
         return "StringTrigger{" +
                 "sequence='" + sequence + '\'' +
                 '}';
     }
+
+
 }
 
 

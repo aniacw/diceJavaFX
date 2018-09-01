@@ -24,6 +24,7 @@ public class SequenceTrigger implements Trigger {
 
     @Override
     public void initialize(String input) throws ParseException {
+        sequence.clear();
 
         int n;
         String[] tokens;
@@ -36,5 +37,13 @@ public class SequenceTrigger implements Trigger {
         } catch (NumberFormatException e) {
             throw new ParseException("", e);
         }
+    }
+
+    public List<Integer> getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(List<Integer> sequence) {
+        this.sequence = sequence;
     }
 }

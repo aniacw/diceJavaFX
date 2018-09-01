@@ -19,7 +19,7 @@ public class ProgramFactory {
         Trigger trigger;
 
         if (triggerName.equals("Sequence Trigger")) {
-            trigger = new SequenceTrigger();
+            trigger = new SequenceTrigger(List<Integer>);
         } else if (triggerName.equals("String Trigger")) {
             trigger = new StringTrigger();
         } else {
@@ -28,8 +28,13 @@ public class ProgramFactory {
 
         if (programName.equals(EXACT_SEQUENCE_NAME)) {
             program = new ExactSequence(trigger);
-        } else if (programName.equals("Add 2")) {
+        } else if (programName.equals(ADD_TWO_NAME)) {
             program = new AddTwo(trigger, 2);
+        } else if (programName.equals(RANDOM_NUMBER_NAME)) {
+            program = new RandomNumber(trigger, 6);
+        } else if (programName.equals(REPEAT_LAST_NUMBER_NAME)) {
+            program = new RepeatLastNumber(trigger, 3);
+
         } else {
             throw new ProgramInitializationException(programName, triggerName);
         }
@@ -39,7 +44,7 @@ public class ProgramFactory {
 
 
     public List<String> getAvailableProgramNames() {
-        return Arrays.asList(EXACT_SEQUENCE_NAME, "Add 2");
+        return Arrays.asList(EXACT_SEQUENCE_NAME, ADD_TWO_NAME, RANDOM_NUMBER_NAME, REPEAT_LAST_NUMBER_NAME);
     }
 
 }

@@ -2,10 +2,7 @@ package main.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import main.ProgrammableDice.*;
 import main.ProgrammableDice.Dice.Dice;
 import main.ProgrammableDice.exception.ProgramInitializationException;
@@ -15,6 +12,7 @@ import java.util.Arrays;
 public class Controller {
     private Dice dice;
     private ProgramFactory programFactory;
+    private Trigger trigger;
 
     @FXML
     private Button buttonAdd;
@@ -43,6 +41,9 @@ public class Controller {
     @FXML
     private ListView history;
 
+    @FXML
+    private TextField input;
+
     public Controller() {
         dice = new Dice();
         programFactory = new ProgramFactory();
@@ -61,6 +62,7 @@ public class Controller {
         try {
             Program p = programFactory.createProgram(
                     comboBoxPrograms.getValue(), comboBoxTriggers.getValue());
+            Trigger selectedTrigger = new Trigger(comboBoxTriggers.getValue(), input);
             dice.addProgram(p);
             programList.getItems().add(p);
         } catch (ProgramInitializationException e) {
@@ -70,7 +72,11 @@ public class Controller {
 
     public void onButtonRollClicked(ActionEvent actionEvent) {
         labelRollResult.setText(Integer.toString(dice.roll()));
-        history.getItems().addAll(dice.getHistory());
+     //   history.getItems().addAll(dice.getHistory());
+    }
+
+    public void setInputAsSequence(){
+        trigger
     }
 
     @FXML

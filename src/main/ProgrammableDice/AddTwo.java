@@ -10,6 +10,13 @@ public class AddTwo extends Program {
         this.repetitions = repetitions;
     }
 
+    //ten jest dobrze?
+    public AddTwo(Trigger trigger) {
+        super(trigger);
+        this.repetitions = repetitions;
+        this.counter = counter;
+    }
+
     @Override
     public boolean isFinished() {
         if (repetitions == counter) {
