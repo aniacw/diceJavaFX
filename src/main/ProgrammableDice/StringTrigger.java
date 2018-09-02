@@ -7,9 +7,15 @@ import java.util.List;
 public class StringTrigger implements Trigger {
 
     private String sequence;
+    private String input;
 
-    public StringTrigger(String sequence) {
+    public StringTrigger(String input, String sequence) {
         this.sequence = sequence;
+        this.input = input;
+    }
+
+    public StringTrigger(String input) {
+        this.input = input;
     }
 
     public StringTrigger() {

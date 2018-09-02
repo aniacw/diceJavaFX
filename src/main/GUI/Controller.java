@@ -5,14 +5,15 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import main.ProgrammableDice.*;
 import main.ProgrammableDice.Dice.Dice;
+import main.ProgrammableDice.Dice.History;
 import main.ProgrammableDice.exception.ProgramInitializationException;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Controller {
     private Dice dice;
     private ProgramFactory programFactory;
-    private Trigger trigger;
 
     @FXML
     private Button buttonAdd;
@@ -62,7 +63,14 @@ public class Controller {
         try {
             Program p = programFactory.createProgram(
                     comboBoxPrograms.getValue(), comboBoxTriggers.getValue());
-            Trigger selectedTrigger = new Trigger(comboBoxTriggers.getValue(), input);
+            if (comboBoxTriggers.getValue() == "Sequence Trigger") {
+                Trigger seqTrigger = new SequenceTrigger(input.getText());
+            }
+
+            if (comboBoxTriggers.getValue() == "String Trigger"){
+                Trigger strTrigger = new StringTrigger(input.getText());
+            }
+
             dice.addProgram(p);
             programList.getItems().add(p);
         } catch (ProgramInitializationException e) {
@@ -75,9 +83,6 @@ public class Controller {
      //   history.getItems().addAll(dice.getHistory());
     }
 
-    public void setInputAsSequence(){
-        trigger
-    }
 
     @FXML
     private ListView<Program> programList;

@@ -19,7 +19,7 @@ public class ProgramFactory {
         Trigger trigger;
 
         if (triggerName.equals("Sequence Trigger")) {
-            trigger = new SequenceTrigger(List<Integer>);
+            trigger = new SequenceTrigger();
         } else if (triggerName.equals("String Trigger")) {
             trigger = new StringTrigger();
         } else {

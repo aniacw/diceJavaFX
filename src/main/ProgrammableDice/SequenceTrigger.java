@@ -8,13 +8,18 @@ import java.util.List;
 public class SequenceTrigger implements Trigger {
 
     private List<Integer> sequence;
+    private String input;
 
     public SequenceTrigger(List<Integer> sequence) {
         this.sequence = sequence;
     }
 
-    public SequenceTrigger(Integer... sequence) {
+    public SequenceTrigger() {
+    }
+
+    public SequenceTrigger(String input, Integer... sequence) {
         this.sequence = Arrays.asList(sequence);
+        this.input = input;
     }
 
     @Override
@@ -39,11 +44,7 @@ public class SequenceTrigger implements Trigger {
         }
     }
 
-    public List<Integer> getSequence() {
-        return sequence;
-    }
-
-    public void setSequence(List<Integer> sequence) {
-        this.sequence = sequence;
+    public String getInput() {
+        return input;
     }
 }
