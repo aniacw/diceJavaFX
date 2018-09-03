@@ -42,4 +42,7 @@ public class ExactSequence extends Program {
                 "trigger=" + trigger +
                 '}';
     }
+
+    @Override
+    public void initialize(String input){}
 }

@@ -33,4 +33,7 @@ public class RepeatLastNumber extends Program {
                 "trigger=" + trigger +
                 '}';
     }
+
+    @Override
+    public void initialize(String input){}
 }

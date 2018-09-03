@@ -26,6 +26,7 @@
       <TextField fx:id="input" layoutX="251.0" layoutY="66.0" />
       <ListView layoutX="673.0" layoutY="72.0" prefHeight="300.0" prefWidth="44.0" />
       <Label fx:id="labelHistory" layoutX="676.0" layoutY="33.0" text="History" />
-      <Label  fx:id="labelSelectedProgram" layoutX="475.0" layoutY="33.0" text="Selected Program" />
+      <Label fx:id="labelSelectedProgram" layoutX="475.0" layoutY="33.0" text="Selected Program" />
+      <TextField layoutX="96.0" layoutY="60.0" />
    </children>
 </Pane>

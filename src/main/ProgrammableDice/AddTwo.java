@@ -42,4 +42,9 @@ public class AddTwo extends Program {
                 "trigger=" + trigger+
                 '}';
     }
+
+   @Override
+    public void initialize(String input){
+        //..............
+   }
 }

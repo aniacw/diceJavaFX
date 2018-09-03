@@ -3,26 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/GUI/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/GUI/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/AddTwo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Dice/Dice$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Dice/Dice.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Dice/History.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/ExactSequence.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Program.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/ProgramFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/RandomNumber.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/RepeatLastNumber.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/SequenceTrigger.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/StringTrigger.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Trigger$ParseException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/Trigger.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/diceJavaFX/main/ProgrammableDice/exception/ProgramInitializationException.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/GUI/Controller.java" afterPath="$PROJECT_DIR$/src/main/GUI/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/SequenceTrigger.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/SequenceTrigger.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/StringTrigger.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/StringTrigger.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/GUI/sample.fxml" afterPath="$PROJECT_DIR$/src/main/GUI/sample.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/Program.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/Program.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java" afterPath="$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,28 +67,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="StringTrigger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/StringTrigger.java">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/GUI/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="method#interpretAsInt#0;class#StringTrigger#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="553">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceTrigger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SequenceTrigger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/SequenceTrigger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="-19">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#290#291#0" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
                 <element signature="e#650#651#0" expanded="true" />
                 <element signature="e#1114#1115#0" expanded="true" />
                 <element signature="e#1142#1143#0" expanded="true" />
@@ -110,45 +94,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/GUI/Controller.java">
+      <file leaf-file-name="RepeatLastNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="66" column="72" lean-forward="false" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
+            <state relative-caret-position="729">
+              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/GUI/sample.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
+      <file leaf-file-name="History.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/History.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddTwo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java">
+      <file leaf-file-name="Trigger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Trigger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="330">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="21" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProgramFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java">
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="729">
+              <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+              <folding>
+                <element signature="method#ParseException#0;class#ParseException#0;class#Program#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,12 +151,29 @@
       <file leaf-file-name="ExactSequence.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-              <folding>
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="756">
+              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddTwo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-292">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,8 +181,8 @@
       <file leaf-file-name="Dice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#382#383#0" expanded="true" />
                 <element signature="e#417#418#0" expanded="true" />
@@ -217,19 +229,19 @@
         <option value="$PROJECT_DIR$/src/main/GUI/Main.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Play.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/exception/ProgramInitializationException.java" />
-        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Program.java" />
-        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Trigger.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Dice/Dice.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Dice/History.java" />
-        <option value="$PROJECT_DIR$/src/main/GUI/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/GUI/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/SequenceTrigger.java" />
         <option value="$PROJECT_DIR$/src/main/ProgrammableDice/StringTrigger.java" />
+        <option value="$PROJECT_DIR$/src/main/GUI/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/Program.java" />
+        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/GUI/Controller.java" />
       </list>
     </option>
   </component>
@@ -258,6 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,9 +324,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,8 +511,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6670135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6670135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2539022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -509,8 +521,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -534,7 +546,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -590,6 +602,7 @@
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#1114#1115#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
@@ -630,6 +643,7 @@
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#1114#1115#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
@@ -715,6 +729,7 @@
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#1114#1115#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
@@ -800,6 +815,7 @@
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#1114#1115#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
@@ -867,34 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Trigger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/exception/ProgramInitializationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -909,57 +897,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-          <folding>
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/Dice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/GUI/sample.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/StringTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="352">
           <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#371#372#0" expanded="true" />
@@ -969,32 +909,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/GUI/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="66" column="72" lean-forward="false" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
+        <state relative-caret-position="396">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ProgramFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/GUI/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state relative-caret-position="704">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/AddTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RandomNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/Dice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/ExactSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/GUI/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/SequenceTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="-19">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#1114#1115#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/RepeatLastNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Dice/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Trigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ProgrammableDice/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="method#ParseException#0;class#ParseException#0;class#Program#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -30,4 +30,7 @@ public class RandomNumber extends Program {
                 "trigger=" + trigger +
                 '}';
     }
+
+    @Override
+    public void initialize(String input){}
 }

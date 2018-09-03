@@ -8,6 +8,7 @@ import main.ProgrammableDice.Dice.Dice;
 import main.ProgrammableDice.Dice.History;
 import main.ProgrammableDice.exception.ProgramInitializationException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -40,10 +41,13 @@ public class Controller {
     private Label labelSelectedProgram;
 
     @FXML
-    private ListView history;
+    private ListView<ArrayList> history;
 
     @FXML
     private TextField input;
+
+    @FXML
+    private TextField program;
 
     public Controller() {
         dice = new Dice();
@@ -67,7 +71,7 @@ public class Controller {
                 Trigger seqTrigger = new SequenceTrigger(input.getText());
             }
 
-            if (comboBoxTriggers.getValue() == "String Trigger"){
+            if (comboBoxTriggers.getValue() == "String Trigger") {
                 Trigger strTrigger = new StringTrigger(input.getText());
             }
 
@@ -80,7 +84,11 @@ public class Controller {
 
     public void onButtonRollClicked(ActionEvent actionEvent) {
         labelRollResult.setText(Integer.toString(dice.roll()));
-     //   history.getItems().addAll(dice.getHistory());
+
+        for (int i = 0; i < dice.getHistory().getHistory().size(); i++) {
+            history.getItems().add(dice.getHistory().getHistory(i));
+        }
+
     }
 
 
