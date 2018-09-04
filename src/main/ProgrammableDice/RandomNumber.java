@@ -32,5 +32,8 @@ public class RandomNumber extends Program {
     }
 
     @Override
-    public void initialize(String input){}
+    public void initialize(String input){
+        bound = 0;
+        bound = Integer.parseInt(input);
+    }
 }

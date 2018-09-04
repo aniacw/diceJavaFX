@@ -64,16 +64,34 @@ public class Controller {
     }
 
     public void onButtonAddClicked(ActionEvent actionEvent) {
+        Trigger trigger = null;
         try {
             Program p = programFactory.createProgram(
                     comboBoxPrograms.getValue(), comboBoxTriggers.getValue());
             if (comboBoxTriggers.getValue() == "Sequence Trigger") {
-                Trigger seqTrigger = new SequenceTrigger(input.getText());
+                trigger = new SequenceTrigger(input.getText());
             }
 
             if (comboBoxTriggers.getValue() == "String Trigger") {
-                Trigger strTrigger = new StringTrigger(input.getText());
+                 trigger = new StringTrigger(input.getText());
             }
+
+            if (comboBoxPrograms.getValue() == "AddTwo") {
+                Program addTwoProgram = new AddTwo(trigger, Integer.parseInt(program.getText()));
+            }
+
+            if (comboBoxPrograms.getValue() == "Exact Sequence") {
+                Program exactSeqProgram = new ExactSequence(trigger, program.getText());
+            }
+
+            if (comboBoxPrograms.getValue() == "Random Number") {
+                Program randomNumberProgram = new RandomNumber(trigger, Integer.parseInt(program.getText()));
+            }
+
+            if (comboBoxPrograms.getValue() == "Repeat Last Number") {
+                Program repeatLastNumberProgram = new RepeatLastNumber(trigger, program.getText());
+            }
+
 
             dice.addProgram(p);
             programList.getItems().add(p);
@@ -85,9 +103,9 @@ public class Controller {
     public void onButtonRollClicked(ActionEvent actionEvent) {
         labelRollResult.setText(Integer.toString(dice.roll()));
 
-        for (int i = 0; i < dice.getHistory().getHistory().size(); i++) {
-            history.getItems().add(dice.getHistory().getHistory(i));
-        }
+//        for (int i = 0; i < dice.getHistory().getHistory().size(); i++) {
+//            history.getItems().add(dice.getHistory().getHistory(i));
+//        }
 
     }
 

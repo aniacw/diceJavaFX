@@ -35,5 +35,8 @@ public class RepeatLastNumber extends Program {
     }
 
     @Override
-    public void initialize(String input){}
+    public void initialize(String input){
+        repetitions = 0;
+        repetitions = Integer.parseInt(input);
+    }
 }

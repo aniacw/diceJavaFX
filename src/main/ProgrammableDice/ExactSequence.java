@@ -44,5 +44,18 @@ public class ExactSequence extends Program {
     }
 
     @Override
-    public void initialize(String input){}
+    public void initialize(String input){
+        sequence.clear();
+        int n;
+        String[] tokens;
+        tokens = input.split("[,; ]+");
+        try {
+            for (String s : tokens) {
+                n = Integer.parseInt(s);
+                sequence.add(n);
+            }
+        } catch (NumberFormatException e) {
+            throw new Trigger.ParseException("", e);
+        }
+    }
 }
