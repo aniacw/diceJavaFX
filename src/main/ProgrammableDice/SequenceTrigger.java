@@ -1,25 +1,26 @@
 package main.ProgrammableDice;
 
 import main.ProgrammableDice.Dice.History;
+import main.ProgrammableDice.exception.ParseException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class SequenceTrigger implements Trigger {
 
     private List<Integer> sequence;
-    private String input;
 
     public SequenceTrigger(List<Integer> sequence) {
         this.sequence = sequence;
     }
 
     public SequenceTrigger() {
+        this.sequence=new ArrayList<>();
     }
 
-    public SequenceTrigger(String input, Integer... sequence) {
+    public SequenceTrigger(Integer... sequence) {
         this.sequence = Arrays.asList(sequence);
-        this.input = input;
     }
 
     @Override
@@ -29,8 +30,7 @@ public class SequenceTrigger implements Trigger {
 
     @Override
     public void initialize(String input) throws ParseException {
-        sequence.clear();
-
+        sequence = new ArrayList<>();
         int n;
         String[] tokens;
         tokens = input.split("[,; ]+");
@@ -42,9 +42,5 @@ public class SequenceTrigger implements Trigger {
         } catch (NumberFormatException e) {
             throw new ParseException("", e);
         }
-    }
-
-    public String getInput() {
-        return input;
     }
 }

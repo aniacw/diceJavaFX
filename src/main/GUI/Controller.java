@@ -5,12 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import main.ProgrammableDice.*;
 import main.ProgrammableDice.Dice.Dice;
-import main.ProgrammableDice.Dice.History;
 import main.ProgrammableDice.exception.ProgramInitializationException;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Controller {
     private Dice dice;
@@ -41,13 +38,13 @@ public class Controller {
     private Label labelSelectedProgram;
 
     @FXML
-    private ListView<ArrayList> history;
+    private ListView<Integer> history;
 
     @FXML
-    private TextField input;
+    private TextField triggerInput;
 
     @FXML
-    private TextField program;
+    private TextField programInput;
 
     public Controller() {
         dice = new Dice();
@@ -58,40 +55,17 @@ public class Controller {
     public void initialize() {
         for (String programName : programFactory.getAvailableProgramNames())
             comboBoxPrograms.getItems().addAll(programName);
-
-        comboBoxTriggers.getItems().add("Sequence Trigger");
-        comboBoxTriggers.getItems().add("String Trigger");
+        for (String triggerName : programFactory.getAvailableTriggerNames())
+            comboBoxTriggers.getItems().addAll(triggerName);
+        comboBoxPrograms.getSelectionModel().select(0);
+        comboBoxTriggers.getSelectionModel().select(0);
     }
 
     public void onButtonAddClicked(ActionEvent actionEvent) {
         Trigger trigger = null;
         try {
             Program p = programFactory.createProgram(
-                    comboBoxPrograms.getValue(), comboBoxTriggers.getValue());
-            if (comboBoxTriggers.getValue() == "Sequence Trigger") {
-                trigger = new SequenceTrigger(input.getText());
-            }
-
-            if (comboBoxTriggers.getValue() == "String Trigger") {
-                 trigger = new StringTrigger(input.getText());
-            }
-
-            if (comboBoxPrograms.getValue() == "AddTwo") {
-                Program addTwoProgram = new AddTwo(trigger, Integer.parseInt(program.getText()));
-            }
-
-            if (comboBoxPrograms.getValue() == "Exact Sequence") {
-                Program exactSeqProgram = new ExactSequence(trigger, program.getText());
-            }
-
-            if (comboBoxPrograms.getValue() == "Random Number") {
-                Program randomNumberProgram = new RandomNumber(trigger, Integer.parseInt(program.getText()));
-            }
-
-            if (comboBoxPrograms.getValue() == "Repeat Last Number") {
-                Program repeatLastNumberProgram = new RepeatLastNumber(trigger, program.getText());
-            }
-
+                    comboBoxPrograms.getValue(), programInput.getText(), comboBoxTriggers.getValue(), triggerInput.getText());
 
             dice.addProgram(p);
             programList.getItems().add(p);
@@ -101,12 +75,9 @@ public class Controller {
     }
 
     public void onButtonRollClicked(ActionEvent actionEvent) {
-        labelRollResult.setText(Integer.toString(dice.roll()));
-
-//        for (int i = 0; i < dice.getHistory().getHistory().size(); i++) {
-//            history.getItems().add(dice.getHistory().getHistory(i));
-//        }
-
+        int rollResult = dice.roll();
+        labelRollResult.setText(Integer.toString(rollResult));
+        history.getItems().add(rollResult);
     }
 
 

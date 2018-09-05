@@ -1,5 +1,8 @@
 package main.ProgrammableDice;
 
+import main.ProgrammableDice.exception.ParseException;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
@@ -44,8 +47,8 @@ public class ExactSequence extends Program {
     }
 
     @Override
-    public void initialize(String input){
-        sequence.clear();
+    public void initialize(String input) throws ParseException {
+        sequence = new ArrayList<>();
         int n;
         String[] tokens;
         tokens = input.split("[,; ]+");
@@ -55,7 +58,8 @@ public class ExactSequence extends Program {
                 sequence.add(n);
             }
         } catch (NumberFormatException e) {
-            throw new Trigger.ParseException("", e);
+            throw new ParseException("", e);
         }
+        iterator=sequence.listIterator();
     }
 }

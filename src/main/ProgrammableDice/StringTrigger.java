@@ -1,6 +1,7 @@
 package main.ProgrammableDice;
 
 import main.ProgrammableDice.Dice.History;
+import main.ProgrammableDice.exception.ParseException;
 
 import java.util.List;
 

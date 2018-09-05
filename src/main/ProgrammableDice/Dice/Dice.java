@@ -3,6 +3,8 @@ package main.ProgrammableDice.Dice;
 import main.ProgrammableDice.Program;
 import main.ProgrammableDice.RandomNumber;
 import main.ProgrammableDice.Trigger;
+import main.ProgrammableDice.exception.ParseException;
+
 import java.util.ArrayList;
 import java.util.List;
 

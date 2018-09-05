@@ -28,7 +28,7 @@ public class History {
         history.clear();
     }
 
-    public List<Integer> getHistory() {
+    public List<Integer> getElements() {
         return history;
     }
 
