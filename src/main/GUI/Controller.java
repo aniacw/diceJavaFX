@@ -48,7 +48,7 @@ public class Controller {
 
     public Controller() {
         dice = new Dice();
-        programFactory = new ProgramFactory();
+        programFactory = new ReflectionProgramFactory();
     }
 
     @FXML

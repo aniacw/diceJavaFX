@@ -17,10 +17,10 @@ public class ExactSequence extends Program {
         this.iterator = this.sequence.listIterator();
     }
 
-    public ExactSequence(Trigger trigger, Integer... sequence) {
+    public ExactSequence(Trigger trigger) {
       //  this(trigger, Arrays.asList(sequence));
         super(trigger);
-        this.sequence = Arrays.asList(sequence);
+        this.sequence = new ArrayList<>();
         this.iterator = this.sequence.listIterator();
     }
 
